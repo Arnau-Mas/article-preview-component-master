@@ -4,7 +4,7 @@ body{
     font-family: 'Manrope', sans-serif;
 }
 
-.card__main{
+.card{
     background-color: white;
     border-radius: 3%;
 }
@@ -17,16 +17,16 @@ body{
     
     
 }
-.card__article{
+.card__info{
     padding:7% 7% 0% 7%;
 }
 
-.card__article--h3{
+.card__title{
     font-size: 1.5em;
     color:hsl(217, 19%, 35%);
 }
 
-.card__article--p{
+.card__description{
     font-size: 1.2em;
     color: hsl(214, 17%, 51%);
     
@@ -39,21 +39,86 @@ body{
     
 }
 
-.card__footer--img{
+.card__image{
     height: 50px;
     border-radius: 100%;
 }
 
-.card__footer--section{
-    padding: 0% 35% 0% 5%;
+.card__share{
+    padding: 0% 30% 0% 5%;
     
 
 }
-.card__footer--span{
+.card__name{
     display: block;
+    color:hsl(217, 19%, 35%)
 }
 
-.card__footer--date{
+.card__date{
     color: hsl(212, 23%, 69%);
 }
 
+.card__button{
+    padding: 10px;
+    /* background-color: hsl(210, 46%, 95%); */
+    /* border-radius: 100%; */
+}
+
+.card__link{
+    border-radius: 100%;
+    background-color: hsl(210, 46%, 95%);
+}
+
+@media (min-width:376px){
+body{
+    
+    display:flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+}
+.card{
+    width: 50%;
+    height: 250px;
+    display:flex;
+    flex-direction: row;
+    /* align-content: center; */
+}
+.card__img{
+    height: 100%;
+    border-radius: 5% 0% 0% 5%;
+}
+.card__title{
+    font-size:1.3em;
+    color:hsl(217, 19%, 35%);
+}
+
+.card__description{
+    font-size:1em;
+    color: hsl(214, 17%, 51%);
+}
+.card__name{
+    font-size: 0.7em;
+}
+.card__date{
+    font-size: 0.7em;
+}
+.card__image{
+    height: 30px;
+}
+.card__info{
+    padding: 0 9% 0 7%;
+}
+.card__description{
+    padding-top: 0%;
+}
+.card__footer{
+    padding: 0 0 0 7%;
+}
+.card__share{
+    padding: 0% 50% 0% 5%;
+}
+.card__button{
+    padding: 6%;
+}
+}
